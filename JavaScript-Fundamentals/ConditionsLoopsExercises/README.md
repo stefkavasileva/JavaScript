@@ -72,7 +72,7 @@ You may shorten further your solution by making it an **arrow function** like th
  ```JavaScript
  
  ([num1, num2, num3]) => console.log(Math.max(num1, num2, num3));
-}
+
 ```
 
 The **judge** system will **accept** the above solution as correct.
@@ -82,15 +82,13 @@ In the judge you can also **return the expected result** instead of printing it 
  ```JavaScript
  
  ([num1, num2, num3]) => Math.max(num1, num2, num3);
-}
+
 ```
 
 The above code could be even further shortened like this:
 
   ```JavaScript
- 
  (nums) => console.log(Math.max(nums[0], nums[1], nums[2]));
-}
 ```
 The judge system will accept the above arrow function as correct solution, passing all the tests.
 
@@ -195,12 +193,12 @@ for (let i=1; i<=n; i+=2) {
 Finally, print the number **i** at each iteration of the **for** -loop. The entire function should look like this:
 
 ```JavaScript
-	function nums(input) {
-		let n = Number(input[0]);
-		for(let i=1; i<=n; i+=2) {
-			console.log(i);
-		}
+function nums(input) {
+	let n = Number(input[0]);
+	for(let i=1; i<=n; i+=2) {
+		console.log(i);
 	}
+}
 ```
 
 Now **test the function locally** on your computer. Invoke the above function like this:
@@ -315,11 +313,7 @@ The **input** comes as array of strings. Its holds the string representations of
 
 The **output** depends on the equation:
 
-- It holds two numbers **x**
- **# 1** and **x**
- **# 2** if the equation has two different solutions (roots): **x**
- **# 1** and **x**
- **# 2**.
+- It holds two numbers **x1** and **x2** if the equation has two different solutions (roots): **x1** and **x2**.
   - First print the smaller root, then the greater.
 - It holds a single number **x** if the equation has only one solution (root): **x**.
 - It holds the text &quot; **No**&quot; if the equation has no solutions (no real roots).
@@ -348,7 +342,7 @@ The **output** consists of **n+3** text lines like shown below.
 
 | **Input** | 5 |
 | --- | --- |
-| **Output** | &lt;table border=&quot;1  <br/> &quot;&gt;  &lt; **tr** &gt;&lt;th&gt; **x** &lt;/th&gt;&lt;th&gt; **1** &lt;/th&gt;&lt;th&gt; **2** &lt;/th&gt;&lt;th&gt; **3** &lt;/th&gt;&lt;th&gt; **4** &lt;/th&gt;&lt;th&gt; **5** &lt;/th&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **1** &lt;/th&gt;&lt;td&gt; **1** &lt;/td&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **2** &lt;/th&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **3** &lt;/th&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **9** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **4** &lt;/th&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **16** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **5** &lt;/th&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;td&gt; **25** &lt;/td&gt;&lt;/ **tr** &gt; <br/> &lt;/table&gt; |
+| **Output** |<pre> &lt;table border=&quot;1  <br/> &quot;&gt;  &lt; **tr** &gt;&lt;th&gt; **x** &lt;/th&gt;&lt;th&gt; **1** &lt;/th&gt;&lt;th&gt; **2** &lt;/th&gt;&lt;th&gt; **3** &lt;/th&gt;&lt;th&gt; **4** &lt;/th&gt;&lt;th&gt; **5** &lt;/th&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **1** &lt;/th&gt;&lt;td&gt; **1** &lt;/td&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **2** &lt;/th&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **3** &lt;/th&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **9** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **4** &lt;/th&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **16** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;/ **tr** &gt;  &lt; **tr** &gt;&lt;th&gt; **5** &lt;/th&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;td&gt; **25** &lt;/td&gt;&lt;/ **tr** &gt; <br/> &lt;/table&gt; |
 
 
 ### Hints
@@ -378,9 +372,9 @@ The **output** consists of **n** lines for **odd**  **n** and **n-1** lines for 
 | **Input** | **Output** |  
 | --- | --- |
 | 4 | +--+--+ <br/>  +--+--+ <br/> +--+--+ | 
-|5 | +---+---+ <br/> |   |   | <br/> +---+---+ <br/> |   |   | <br/> +---+---+ |   
-| 6 | +----+----+ <br/> |    |    | <br/> +----+----+ <br/> |    |    | <br/> +----+----+ |
-| 7 | +-----+-----+ <br/> |     |     | <br/> |     |     | <br/> +-----+-----+ <br/> |     |     | <br/> |     |     | <br/> +-----+-----+ |
+|5 | +---+---+ <br/> \|   \|   \| <br/> +---+---+ <br/> \|   \|   \| <br/> +---+---+ |   
+| 6 | +----+----+ <br/> \|    \|    \| <br/> +----+----+ <br/> \|    \|    \| <br/> +----+----+ |
+| 7 | +-----+-----+ <br/> \|     \|     \| <br/> \|     \|     \| <br/> +-----+-----+ <br/> \|     \|     \| <br/> \|     \|     \| <br/> +-----+-----+ |
 
 ### Hints
 
@@ -402,51 +396,51 @@ The **output** should be an **HTML table** , holding the calendar rows and colum
 
 ### Examples
 
-| **Input** | **Output** | 24122012 |
+| **Input** | **Output** | 
 | --- | --- |
- |24 <br/> 12 <br/> 2012 | &lt;table&gt; <br/>  &lt;tr&gt;&lt;th&gt; **Sun** &lt;/th&gt;&lt;th&gt; **Mon** &lt;/th&gt;&lt;th&gt; **Tue** &lt;/th&gt;&lt;th&gt; **Wed** &lt;/th&gt;&lt;th&gt; **Thu** &lt;/th&gt;&lt;th&gt; **Fri** &lt;/th&gt;&lt;th&gt; **Sat** &lt;/th&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **25** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **26** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **27** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **28** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **29** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **30** &lt;/td&gt;&lt;td&gt; **1** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **7** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **9** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;td&gt; **11** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **13** &lt;/td&gt;&lt;td&gt; **14** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **16** &lt;/td&gt;&lt;td&gt; **17** &lt;/td&gt;&lt;td&gt; **18** &lt;/td&gt;&lt;td&gt; **19** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;td&gt; **21** &lt;/td&gt;&lt;td&gt; **22** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **23** &lt;/td&gt;&lt;td class=&quot; **today**&quot;&gt; **24** &lt;/td&gt;&lt;td&gt; **25** &lt;/td&gt;&lt;td&gt; **26** &lt;/td&gt;&lt;td&gt; **27** &lt;/td&gt;&lt;td&gt; **28** &lt;/td&gt;&lt;td&gt; **29** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **30** &lt;/td&gt;&lt;td&gt; **31** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt;1&lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **2** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **3** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **4** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **5** &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; |
+| 24 <br/> 12 <br/> 2012 |<pre> &lt;table&gt; <br/>  &lt;tr&gt;&lt;th&gt; **Sun** &lt;/th&gt;&lt;th&gt; **Mon** &lt;/th&gt;&lt;th&gt; **Tue** &lt;/th&gt;&lt;th&gt; **Wed** &lt;/th&gt;&lt;th&gt; **Thu** &lt;/th&gt;&lt;th&gt; **Fri** &lt;/th&gt;&lt;th&gt; **Sat** &lt;/th&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **25** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **26** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **27** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **28** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **29** &lt;/td&gt;&lt;td class=&quot; **prev-month**&quot;&gt; **30** &lt;/td&gt;&lt;td&gt; **1** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **2** &lt;/td&gt;&lt;td&gt; **3** &lt;/td&gt;&lt;td&gt; **4** &lt;/td&gt;&lt;td&gt; **5** &lt;/td&gt;&lt;td&gt; **6** &lt;/td&gt;&lt;td&gt; **7** &lt;/td&gt;&lt;td&gt; **8** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **9** &lt;/td&gt;&lt;td&gt; **10** &lt;/td&gt;&lt;td&gt; **11** &lt;/td&gt;&lt;td&gt; **12** &lt;/td&gt;&lt;td&gt; **13** &lt;/td&gt;&lt;td&gt; **14** &lt;/td&gt;&lt;td&gt; **15** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **16** &lt;/td&gt;&lt;td&gt; **17** &lt;/td&gt;&lt;td&gt; **18** &lt;/td&gt;&lt;td&gt; **19** &lt;/td&gt;&lt;td&gt; **20** &lt;/td&gt;&lt;td&gt; **21** &lt;/td&gt;&lt;td&gt; **22** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **23** &lt;/td&gt;&lt;td class=&quot; **today**&quot;&gt; **24** &lt;/td&gt;&lt;td&gt; **25** &lt;/td&gt;&lt;td&gt; **26** &lt;/td&gt;&lt;td&gt; **27** &lt;/td&gt;&lt;td&gt; **28** &lt;/td&gt;&lt;td&gt; **29** &lt;/td&gt;&lt;/tr&gt;  &lt;tr&gt;&lt;td&gt; **30** &lt;/td&gt;&lt;td&gt; **31** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt;1&lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **2** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **3** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **4** &lt;/td&gt;&lt;td class=&quot; **next-month**&quot;&gt; **5** &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; |
 
 ### HTML Skeleton
 
 To simplify your work, use the below HTML code and write the missing code in the **calendar()** function:
 
 ```HTML
- &lt;!DOCTYPE html&gt;
-&lt; **html** &gt;
-&lt; **head** &gt;
-    &lt; **title** &gt;Monthly Calendar&lt;/ **title** &gt;
-    &lt; **style** &gt;
+<!DOCTYPE html>
+< **html** >
+< **head** >
+    < **title** >Monthly Calendar</ **title** >
+    < **style** >
         . **prev-month** , . **next-month** { color: **#CCC** }
         . **today** { font-weight: **bold** ; background: **#DDD** ; }
         . **title** { background: **#AAAAFF** ; margin: 10 **px 0** ; padding:5 **px** }
          **table** { border: 1 **px solid**  **#CCC** ;}
          **td** { text-align: **center** ; }
          **#calendarCode** { width: 100%; }
-    &lt;/ **style** &gt;
-    &lt; **script** &gt;
+    </ **style** >
+    < **script** >
          **function** _calendar_([day, month, year])
         {            _//_ **TODO: return the HTML text holding the calendar table**         }
-    &lt;/ **script** &gt;
-&lt;/ **head** &gt;
+    </ **script** >
+</ **head** >
 
-&lt; **body** &gt;
-    Day: &lt; **input** id= **&quot;day&quot;** type= **&quot;number&quot;** value= **&quot;4&quot;** /&gt;
-    Month: &lt; **input** id= **&quot;month&quot;** type= **&quot;number&quot;** value= **&quot;9&quot;** /&gt;
-    Year: &lt; **input** id= **&quot;year&quot;** type= **&quot;number&quot;** value= **&quot;2016&quot;** /&gt;
-    &lt; **input** type= **&quot;button&quot;** value=**&quot;Show&quot;
-         **onclick=**&quot; ****let**  **calendarHTML** =
-            _calendar_([ **document**.getElementById( **&#39;day&#39;** ). **value** ,
-                 **document**.getElementById( **&#39;month&#39;** ). **value** ,
-                 **document**.getElementById( **&#39;year&#39;** ). **value** ]);
-             **document**.getElementById( **&#39;calendar&#39;** ). **innerHTML** = **calendarHTML** ;
-             **document**.getElementById( **&#39;calendarCode&#39;** ). **innerText** = **calendarHTML****&quot;** /&gt;
-    &lt; **div** class= **&quot;title&quot;** &gt;Calendar:&lt;/ **div** &gt;
-    &lt; **div** id= **&quot;calendar&quot;** &gt;Calendar will be shown here&lt;/ **div** &gt;
-    &lt; **div** class= **&quot;title&quot;** &gt;HTML:&lt;/ **div** &gt;
-    &lt; **textarea** rows= **&quot;12&quot;** id= **&quot;calendarCode&quot;** &gt;&lt;/ **textarea** &gt;
-&lt;/ **body** &gt;
+< **body** >
+    Day: < **input** id= **"day"** type= **"number"** value= **"4"** />
+    Month: < **input** id= **"month"** type= **"number"** value= **"9"** />
+    Year: < **input** id= **"year"** type= **"number"** value= **"2016"** />
+    < **input** type= **"button"** value=**"Show"
+         **onclick=**" ****let**  **calendarHTML** =
+            _calendar_([ **document**.getElementById( **'day'** ). **value** ,
+                 **document**.getElementById( **'month'** ). **value** ,
+                 **document**.getElementById( **'year'** ). **value** ]);
+             **document**.getElementById( **'calendar'** ). **innerHTML** = **calendarHTML** ;
+             **document**.getElementById( **'calendarCode'** ). **innerText** = **calendarHTML****"** />
+    < **div** class= **"title"** >Calendar:</ **div** >
+    < **div** id= **"calendar"** >Calendar will be shown here</ **div** >
+    < **div** class= **"title"** >HTML:</ **div** >
+    < **textarea** rows= **"12"** id= **"calendarCode"** ></ **textarea** >
+</ **body** >
 
-&lt;/ **html** &gt; |
+</ **html** > |
 ```
 
 ### Hints
