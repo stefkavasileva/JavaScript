@@ -372,8 +372,8 @@ The **output** consists of **n** lines for **odd**  **n** and **n-1** lines for 
 | **Input** | **Output** |  
 | --- | --- |
 | 4 | +--+--+ <br/>  +--+--+ <br/> +--+--+ | 
-|5 | +---+---+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +---+---+ <br/> \|&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;\| <br/> +---+---+ |   
-| 6 | +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ |
+|5 | +---+---+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +---+---+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +---+---+ |   
+| 6 | +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ |
 | 7 | +-----+-----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +-----+-----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +-----+-----+ |
 
 ### Hints
