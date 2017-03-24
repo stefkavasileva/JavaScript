@@ -161,7 +161,7 @@ The **output** should be returned as a result of your function in the form of a 
 
 | **Input** | **Output** |
 | --- | --- |
-| 3 | <pre>&lt;div class=&quot;chessboard&quot;&gt; <br/>   &lt;div&gt;  <br/>    &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt;  &lt;div&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt; <br/>   &lt;div&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt; <br/> &lt;/div&gt; |
+| 3 | <pre>&lt;div class=&quot;chessboard&quot;&gt; <br/>   &lt;div&gt;  <br/>    &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt;<br/>  &lt;div&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt; <br/>   &lt;div&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;white&quot;&gt;&lt;/span&gt; <br/>     &lt;span class=&quot;black&quot;&gt;&lt;/span&gt; <br/>   &lt;/div&gt; <br/> &lt;/div&gt; |
 
 ## 11.Binary Logarithm
 
