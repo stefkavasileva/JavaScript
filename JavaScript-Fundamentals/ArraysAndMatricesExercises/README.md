@@ -126,7 +126,7 @@ The **output** is the processed array after the filtration, which should be a no
 ### Examples
 
 | **Input** | **Output** |  
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- |
 | 1 <br/> 3 <br/> 8 <br/> 4 <br/> 10 <br/> 12 <br/> 3 <br/> 2 <br/> 24 | 1 <br/> 3 <br/> 8 <br/> 10 <br/> 12 <br/> 24 | 
 | 1 <br/> 2 <br/> 3 <br/> 4 | 1 <br/> 2 <br/> 3 <br/> 4 | 
 |20 <br/> 3 <br/> 2 <br/> 15 <br/> 6 <br/> 1 | 20 |
