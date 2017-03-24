@@ -286,6 +286,6 @@ The **output** is the completed structure, printed on the console.
 ### Examples
 
 | **Input** | **Output** |  
-| --- | --- | --- | --- | --- |
+| --- | --- | 
 | 4 | \*\*AT\*\* <br/> \*C--G\* <br/> T----T <br/> \*A--G\* |
 | 10 | \*\*AT\*\* <br/> \*C--G\* <br/> T----T <br/> \*A--G\* <br/> \*\*GG\*\* <br/> \*A--T\* <br/> C----G <br/> \*T--T\* <br/> \*\*AG\*\* <br/> \*G--G\* |
