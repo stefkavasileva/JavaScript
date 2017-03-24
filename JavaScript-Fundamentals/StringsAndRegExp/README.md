@@ -137,28 +137,28 @@ The **input** comes as array of string elements.
 The **output** is the return value of your function. Compose the list in a string and return it. See the examples for formatting details.
 
 ```HTML
- <!DOCTYPE **html** >
-< **html**  **lang=****"en"**>
-< **head** >
-    < **meta**  **charset=****"UTF-8"**>
-    < **title** >Escaping</ **title** >
-</ **head** >
-< **body** >
-< **div** >< **label**  **for=****"userInput" **>Paste test input here:</** label **></** div**>
-< **div** >
-  < **textarea**  **rows=****"12" **** cols= ****"40"**  **id=****"userInput" **></** textarea**>
-  < **input**  **type=****"button" **** value= ****"Escape"
-       **** onclick= ****"**** document**.getElementById(**'result'**).**innerHTML**= html_Escape_(**JSON**.parse(**document**.getElementById(**'userInput'**).**value**.replace(/'/g, String.fromCharCode(34))));**"**/>
-</ **div** >
-< **div** >< **label**  **for=****"result" **>Results will show up here:</** label **></** div**>
-< **div**  **id=****"result" **></** div**>
-< **script** >
-     **function html** _Escape_(input) {
-        _//_ **TODO
-    ** }
-</ **script** >
-</ **body** >
-</ **html** > |
+ <!DOCTYPE html >
+< html  lang"en">
+< head >
+    < meta  charset="UTF-8">
+    < title >Escaping</ title >
+</ head >
+< body >
+< div >< label  for="userInput" >Paste test input here:</ label ></ div>
+< div >
+  < textarea  rows="12"  cols= "40"  id="userInput" ></ textarea>
+  < input  type="button"  value= "Escape"
+        onclick= " document.getElementById('result').innerHTML= html_Escape_(JSON.parse(document.getElementById('userInput').value.replace(/'/g, String.fromCharCode(34))));"/>
+</ div >
+< div >< label  for="result" Results will show up here:</ label ></ div>
+< div  id="result" ></ div>
+< script >
+     function html _Escape_(input) {
+        _//_ TODO
+     }
+</ script >
+</ body >
+</ html > |
 ```
 
 ### Examples
