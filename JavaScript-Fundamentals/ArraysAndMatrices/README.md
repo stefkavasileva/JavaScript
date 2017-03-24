@@ -83,8 +83,7 @@ The **output** is printed on the console on a single line, separated by space.
 
 #### Explanation
 
-The 2 nd element (1) is the sum of the 3 elements before it, but there is only 1, so we take that. The third element, is the sum of the first 2 (1 and 1) and the 4
-# th – the sum of 1, 1 and 2. The 5th element is the sum of the 2nd, 3 rd and 4th(1, 2 and 4) and so on.
+The 2 nd element (1) is the sum of the 3 elements before it, but there is only 1, so we take that. The third element, is the sum of the first 2 (1 and 1) and the 4th – the sum of 1, 1 and 2. The 5th element is the sum of the 2nd, 3 rd and 4th(1, 2 and 4) and so on.
 
 ## 6.Process Odd Numbers
 
