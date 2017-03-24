@@ -94,7 +94,6 @@ However, the incoming units need to be equalized first and after the calculation
 
 ```JavaScript
 let delta = Math.abs(dist1 - dist2);
-}
 ```
 
 ## 4.Distance in 3D
