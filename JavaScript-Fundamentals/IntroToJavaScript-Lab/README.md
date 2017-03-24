@@ -2,7 +2,7 @@
 
 Problems for in-class lab for the [&quot;JavaScript Fundamentals&quot; course @ SoftUni](https://softuni.bg/courses/javascript-fundamentals). Submit your solutions in the SoftUni judge system at [https://judge.softuni.bg/Contests/287/.](https://judge.softuni.bg/Contests/287/)
 
-1. 1.Sum 3 Numbers
+## 1.Sum 3 Numbers
 
 Write a JS function that takes three numbers as input and outputs their sum.
 
@@ -55,7 +55,7 @@ The **output** should be printed to the console.
 | --- | --- |
 | [&#39;12&#39;, &#39;Ivan&#39;, &#39;15&#39;, &#39;Asen&#39;, &#39;9&#39;] | { name: &#39;Ivan&#39;, age: 15 } |
 
-1. 5.String Of Numbers 1…N
+## 5.String Of Numbers 1…N
 
 Write a JS function that read a number **n** as input and prints all numbers from 1 to **n** , concatenated as a single string.
 
@@ -67,7 +67,7 @@ The **output** should be returned as a result of your function.
 | --- | --- |
 | [&#39;11&#39;] | &#39;1234567891011&#39; |
 
-1. 6.Figure Area
+## 6.Figure Area
 
 Write a JS function that calculates the area of the figure on the right by given values for **w** , **h** , **W** and **H**. The lower right corner is always common for the two rectangles.
 
@@ -96,7 +96,7 @@ The **output** should be returned as a result of your function.
 | --- | --- |
 | [&#39;2016&#39;, &#39;9&#39;, &#39;30&#39;] | 2016-10-1 |
 
-1. 8.Distance between Points
+## 8.Distance between Points
 
 Write a JS function that calculates the distance between two points by given x and y coordinates. Use objects to store the two points.
 
