@@ -13,7 +13,7 @@ The **output** should be the returned as a result of your function.
 ### Examples
 
 | **Input** | **Output** |  
-| --- | --- | --- | --- | --- |
+| --- | --- |
 | 3 <br/> 2 | 6 |   | 23632.36 <br/> -12.3249 | -291266.473764 |
 
 ## 2.Boxes and Bottles
@@ -147,7 +147,7 @@ The **output** should be returned as a result of your function in the form of a 
 
 | **Input** | **Output** |
 | --- | --- |
-| 10 | &lt;ul&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;1&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;2&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;3&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;4&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;5&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;6&lt;/span&gt;&lt;/li&gt;   <br/> &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;7&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;8&lt;/span&gt;&lt;/li&gt;   <br/> &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;9&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;10&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;/ul&gt; |
+| 10 | &lt;ul&gt; <br/> <pre> &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;1&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;2&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;3&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;4&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;5&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;6&lt;/span&gt;&lt;/li&gt;   <br/> &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;7&lt;/span&gt;&lt;/li&gt; <br/>   &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;8&lt;/span&gt;&lt;/li&gt;   <br/> &lt;li&gt;&lt;span style=&#39;color:green&#39;&gt;9&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;li&gt;&lt;span style=&#39;color:blue&#39;&gt;10&lt;/span&gt;&lt;/li&gt;  <br/>  &lt;/ul&gt; |
 
 ## 10.Chess Board
 
