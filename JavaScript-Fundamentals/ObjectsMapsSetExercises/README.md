@@ -25,16 +25,16 @@ The **output** is a **JSON representation** of the data for all the heroes you&#
 
 - We need an array that will hold our hero data. That is the first thing we create.
 
- ```JavaScript
+```JavaScript
  function main(input) {
 	let heroData = [
 	];
  }
- ```
+```
  
 - Next, we need to loop over the whole input, and process it. Let&#39;s do that with a simple **for** loop.
 
- ```JavaScript
+```JavaScript
  function main(input) {
 	let heroData = [
 	];
@@ -48,7 +48,7 @@ The **output** is a **JSON representation** of the data for all the heroes you&#
 - Every element from the input holds data about a hero, however the **elements from the data** we need are **separated by some delimiter** , so we just split each string with that **delimiter**.
 - Next, we need to take the elements from the **string array** , which is a result of the **string split** , and parse them.
 
-  ```JavaScript
+```JavaScript
  function main(input) {
 	let heroData = [
 	];
@@ -61,13 +61,11 @@ The **output** is a **JSON representation** of the data for all the heroes you&#
 		let currentHeroItems = currentHeroArguments[2].split(", ");
 	}
  }
- ```
+```
  
-- However, if you do this, you could get quite the error in the current logic. If you go up and read the problem definition again, you will notice that there might be a **case** where the hero **has**** no items **; in that case, if we try to take the** 3**
-# rd
- **element** of the **currentHeroArguments** array, it will **result in an error**. That is why we need to perform a simple check.
+- However, if you do this, you could get quite the error in the current logic. If you go up and read the problem definition again, you will notice that there might be a **case** where the hero **has**** no items **; in that case, if we try to take the 3rd**element** of the **currentHeroArguments** array, it will **result in an error**. That is why we need to perform a simple check.
 
-  ```JavaScript
+```JavaScript
  function main(input) {
 	let currentHeroItems = [];
 	
@@ -75,28 +73,26 @@ The **output** is a **JSON representation** of the data for all the heroes you&#
 		currentHeroItems = currentHeroArguments[2].split(", ");
 	}
  }
- ```
+```
  
 - If **there are any items** in the **input** , the **variable** will be set to the **split version of them**. If not, it will just remain an **empty array** , **as it is supposed to**.
 - We have now extracted the needed data – we have stored the **input name** in a **variable** , we have parsed the **given level** to a **number** , and we have also **split** the **items** that the **hero holds** by their **delimiter** , which would result in a **string array** of elements. By definition, the **items** are **strings** , so we don&#39;t need to process the array we&#39;ve made anymore.
 - Now what is left is to add that data into **an object** and **add** that object to the **array**.
 
-  ```JavaScript
-
+```JavaScript
 let hero = {
 	name: currentHeroName,
 	level: currentHeroLevel,
 	items: currentHeroItems
 };
-
 heroData.push(hero);
- ```
- 
+```
+
 - Lastly, we need to turn the array of objects we have made, into a JSON string, which is done by the **JSON.stringify()** function
 
- ```JavaScript
+```JavaScript
 console.log(JSON.stringify(heroData));	
- ```
+```
 
 ## 2.JSON&#39;s Table
 
@@ -112,7 +108,7 @@ The **output** is the HTML code of a table which holds the data exactly as expla
 
 | **Input** | **Output** |
 | --- | --- |
-| {&quot;name&quot;:&quot;Pesho&quot;,&quot;position&quot;:&quot;Promenliva&quot;,&quot;salary&quot;:100000} <br/> {&quot;name&quot;:&quot;Teo&quot;,&quot;position&quot;:&quot;Lecturer&quot;,&quot;salary&quot;:1000} <br/> {&quot;name&quot;:&quot;Georgi&quot;,&quot;position&quot;:&quot;Lecturer&quot;,&quot;salary&quot;:1000} | &lt;table&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Pesho&lt;/td&gt; <br/>                 &lt;td&gt;Promenliva&lt;/td&gt; <br/>                 &lt;td&gt;100000&lt;/td&gt; <br/>         &lt;tr&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Teo&lt;/td&gt; <br/>                 &lt;td&gt;Lecturer&lt;/td&gt; <br/>                 &lt;td&gt;1000&lt;/td&gt; <br/>         &lt;tr&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Georgi&lt;/td&gt; <br/>                 &lt;td&gt;Lecturer&lt;/td&gt; <br/>                 &lt;td&gt;1000&lt;/td&gt; <br/>         &lt;tr&gt; <br/> &lt;/table&gt; |
+| {&quot;name&quot;:&quot;Pesho&quot;,&quot;position&quot;:&quot;Promenliva&quot;,&quot;salary&quot;:100000} <br/> {&quot;name&quot;:&quot;Teo&quot;,&quot;position&quot;:&quot;Lecturer&quot;,&quot;salary&quot;:1000} <br/> {&quot;name&quot;:&quot;Georgi&quot;,&quot;position&quot;:&quot;Lecturer&quot;,&quot;salary&quot;:1000} |<pre> &lt;table&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Pesho&lt;/td&gt; <br/>                 &lt;td&gt;Promenliva&lt;/td&gt; <br/>                 &lt;td&gt;100000&lt;/td&gt; <br/>         &lt;tr&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Teo&lt;/td&gt; <br/>                 &lt;td&gt;Lecturer&lt;/td&gt; <br/>                 &lt;td&gt;1000&lt;/td&gt; <br/>         &lt;tr&gt; <br/>         &lt;tr&gt; <br/>                 &lt;td&gt;Georgi&lt;/td&gt; <br/>                 &lt;td&gt;Lecturer&lt;/td&gt; <br/>                 &lt;td&gt;1000&lt;/td&gt; <br/>         &lt;tr&gt; <br/> &lt;/table&gt; |
 
 ### Hints
 
