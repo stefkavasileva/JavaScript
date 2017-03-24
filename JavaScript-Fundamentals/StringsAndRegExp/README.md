@@ -137,36 +137,35 @@ The **input** comes as array of string elements.
 The **output** is the return value of your function. Compose the list in a string and return it. See the examples for formatting details.
 
 ```HTML
- &lt;!DOCTYPE **html** &gt;
-&lt; **html**  **lang=****&quot;en&quot;**&gt;
-&lt; **head** &gt;
-    &lt; **meta**  **charset=****&quot;UTF-8&quot;**&gt;
-    &lt; **title** &gt;Escaping&lt;/ **title** &gt;
-&lt;/ **head** &gt;
-&lt; **body** &gt;
-&lt; **div** &gt;&lt; **label**  **for=****&quot;userInput&quot; **&gt;Paste test input here:&lt;/** label **&gt;&lt;/** div**&gt;
-&lt; **div** &gt;
-  &lt; **textarea**  **rows=****&quot;12&quot; **** cols= ****&quot;40&quot;**  **id=****&quot;userInput&quot; **&gt;&lt;/** textarea**&gt;
-  &lt; **input**  **type=****&quot;button&quot; **** value= ****&quot;Escape&quot;
-       **** onclick= ****&quot;**** document**.getElementById(**&#39;result&#39;**).**innerHTML**= html_Escape_(**JSON**.parse(**document**.getElementById(**&#39;userInput&#39;**).**value**.replace(/&#39;/g, String.fromCharCode(34))));**&quot;**/&gt;
-&lt;/ **div** &gt;
-&lt; **div** &gt;&lt; **label**  **for=****&quot;result&quot; **&gt;Results will show up here:&lt;/** label **&gt;&lt;/** div**&gt;
-&lt; **div**  **id=****&quot;result&quot; **&gt;&lt;/** div**&gt;
-&lt; **script** &gt;
+ <!DOCTYPE **html** >
+< **html**  **lang=****"en"**>
+< **head** >
+    < **meta**  **charset=****"UTF-8"**>
+    < **title** >Escaping</ **title** >
+</ **head** >
+< **body** >
+< **div** >< **label**  **for=****"userInput" **>Paste test input here:</** label **></** div**>
+< **div** >
+  < **textarea**  **rows=****"12" **** cols= ****"40"**  **id=****"userInput" **></** textarea**>
+  < **input**  **type=****"button" **** value= ****"Escape"
+       **** onclick= ****"**** document**.getElementById(**'result'**).**innerHTML**= html_Escape_(**JSON**.parse(**document**.getElementById(**'userInput'**).**value**.replace(/'/g, String.fromCharCode(34))));**"**/>
+</ **div** >
+< **div** >< **label**  **for=****"result" **>Results will show up here:</** label **></** div**>
+< **div**  **id=****"result" **></** div**>
+< **script** >
      **function html** _Escape_(input) {
         _//_ **TODO
     ** }
-&lt;/ **script** &gt;
-&lt;/ **body** &gt;
-&lt;/ **html** &gt; |
+</ **script** >
+</ **body** >
+</ **html** > |
 ```
 
 ### Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| [&#39;&lt;b&gt;unescaped text&lt;/b&gt;&#39;, &#39;normal text&#39;] |
-| &lt;ul&gt; <br/>   &lt;li&gt;&amp;lt;b&amp;gt;unescaped text&amp;lt;/b&amp;gt;&lt;/li&gt; <br/>   &lt;li&gt;normal text&lt;/li&gt; <br/> &lt;/ul&gt; |
+| [&#39;&lt;b&gt;unescaped text&lt;/b&gt;&#39;, &#39;normal text&#39;]| &lt;ul&gt; <br/>   &lt;li&gt;&amp;lt;b&amp;gt;unescaped text&amp;lt;/b&amp;gt;&lt;/li&gt; <br/>   &lt;li&gt;normal text&lt;/li&gt; <br/> &lt;/ul&gt; |
 | [&#39;&lt;div style=\&quot;color: red;\&quot;&gt;Hello, Red!&lt;/div&gt;&#39;, &#39;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;tr&gt;&#39;] | &lt;ul&gt; <br/>   &lt;li&gt;&amp;lt;div style=\&amp;quot;color: red;\&amp;quot;&amp;gt;Hello, Red!&amp;lt;/div&amp;gt;&lt;/li&gt; <br/>   &lt;li&gt;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;Cell 1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Cell 2&amp;lt;/td&amp;gt;&amp;lt;tr&amp;gt;&lt;/li&gt; <br/> &lt;/ul&gt; |
 
 ## 10.Match All Words
