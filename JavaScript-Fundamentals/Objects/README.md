@@ -2,7 +2,7 @@
 
 Problems for in-class lab for the [&quot;JavaScript Fundamentals&quot; course @ SoftUni](https://softuni.bg/courses/javascript-fundamentals). Submit your solutions in the SoftUni judge system at [https://judge.softuni.bg/Contests/315/](https://judge.softuni.bg/Contests/315/).
 
-1. 1.Towns to JSON
+## 1.Towns to JSON
 
 You&#39;re tasked to create and print a JSON from a text table. You will receive input as an array of strings, where each string represents a row of a table, with values on the row encompassed by pipes **&quot;|&quot;** and optionally spaces. The table will consist of exactly 3 columns **&quot;Town&quot;** , **&quot;Latitude&quot;** and **&quot;Longitude&quot;**. The **latitude** and **longitude** columns will always contain **valid numbers**. Check the examples to get a better understanding of your task.
 
@@ -14,10 +14,8 @@ The **output** should be printed on the console - for each entry row in the inpu
 
 | **Input** | **Output** |
 | --- | --- |
-| [&#39;| Town | Latitude | Longitude |&#39;,&#39;| Sofia | 42.696552 | 23.32601 |&#39;,&#39;| Beijing | 39.913818 | 116.363625 |&#39;]; |[{&quot;Town&quot;:&quot;Sofia&quot;,&quot;Latitude&quot;:42.69,&quot;Longitude&quot;:23.32},
-{&quot;Town&quot;:&quot;Beijing&quot;,&quot;Latitude&quot;:39.91,&quot;Longitude&quot;:116.36}] |
-| [&#39;| Town | Latitude | Longitude |&#39;,&#39;| Veliko Turnovo | 43.0757 | 25.6172 |&#39;,&#39;| Monatevideo | 34.50 | 56.11 |&#39;] | [{&quot;Town&quot;:&quot;Veliko Turnovo&quot;,&quot;Latitude&quot;:43.0757,&quot;Longitude&quot;:25.6172},
-{&quot;Town&quot;:&quot;Monatevideo&quot;,&quot;Latitude&quot;:34.5,&quot;Longitude&quot;:56.11}] |
+| [&#39;\| Town \| Latitude \| Longitude \|&#39;,&#39;\| Sofia \| 42.696552 \| 23.32601 \|&#39;,&#39;\| Beijing \| 39.913818 \| 116.363625 \|&#39;]; |[{&quot;Town&quot;:&quot;Sofia&quot;,&quot;Latitude&quot;:42.69,&quot;Longitude&quot;:23.32},{&quot;Town&quot;:&quot;Beijing&quot;,&quot;Latitude&quot;:39.91,&quot;Longitude&quot;:116.36}] |
+| [&#39;\| Town \| Latitude \| Longitude \|&#39;,&#39;\| Veliko Turnovo \| 43.0757 \| 25.6172 \|&#39;,&#39;\| Monatevideo \| 34.50 \| 56.11 \|&#39;] | [{&quot;Town&quot;:&quot;Veliko Turnovo&quot;,&quot;Latitude&quot;:43.0757,&quot;Longitude&quot;:25.6172},{&quot;Town&quot;:&quot;Monatevideo&quot;,&quot;Latitude&quot;:34.5,&quot;Longitude&quot;:56.11}] |
 
 ## 2.Score to HTML
 
@@ -33,10 +31,8 @@ The **output** should be printed on the console - a table with 2 columns - **&qu
 
 | **Input** | **Output** |
 | --- | --- |
-| [{&quot;name&quot;:&quot;Pesho&quot;,&quot;score&quot;:479},{&quot;name&quot;:&quot;Gosho&quot;,&quot;score&quot;:205}] |
-| **Output** |
-| &lt;table&gt; <br/>   &lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;score&lt;/th&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Pesho&lt;/td&gt;&lt;td&gt;479&lt;/td&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Gosho&lt;/td&gt;&lt;td&gt;205&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
-| [{&quot;name&quot;:&quot;Pesho &amp; Kiro&quot;,&quot;score&quot;:479},{&quot;name&quot;:&quot;Gosho, Maria &amp; Viki&quot;,&quot;score&quot;:205}] | &lt;table&gt; <br/>   &lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;score&lt;/th&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Pesho &amp;amp; Kiro&lt;/td&gt;&lt;td&gt;479&lt;/td&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Gosho, Maria &amp;amp; Viki&lt;/td&gt;&lt;td&gt;205&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
+| [{&quot;name&quot;:&quot;Pesho&quot;,&quot;score&quot;:479},{&quot;name&quot;:&quot;Gosho&quot;,&quot;score&quot;:205}] | <pre> &lt;table&gt; <br/>   &lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;score&lt;/th&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Pesho&lt;/td&gt;&lt;td&gt;479&lt;/td&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Gosho&lt;/td&gt;&lt;td&gt;205&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
+| [{&quot;name&quot;:&quot;Pesho &amp; Kiro&quot;,&quot;score&quot;:479},{&quot;name&quot;:&quot;Gosho, Maria &amp; Viki&quot;,&quot;score&quot;:205}] |<pre> &lt;table&gt; <br/>   &lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;score&lt;/th&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Pesho &amp;amp; Kiro&lt;/td&gt;&lt;td&gt;479&lt;/td&gt;&lt;/tr&gt; <br/>   &lt;tr&gt;&lt;td&gt;Gosho, Maria &amp;amp; Viki&lt;/td&gt;&lt;td&gt;205&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
 
 ## 1.From JSON to HTML Table
 
@@ -53,49 +49,46 @@ The **output** should be printed on the console - for each entry row in the inpu
 You are provided with an HTML file to test your table in the browser.
 
 ```HTML
- &lt;!DOCTYPE **html** &gt;
-&lt; **html**  **lang=****&quot;en&quot;**&gt;
-&lt; **head** &gt;
-    &lt; **meta**  **charset=****&quot;UTF-8&quot;**&gt;
-    &lt; **title** &gt;FromJSONToHTMLTable&lt;/ **title** &gt;
-    &lt; **style** &gt;
-         **table** , **th** {
-             **border** : **groove** ;
-             **border-collapse** : **collapse** ;
+<!DOCTYPE html >
+< html  lang="en">
+< head >
+    < meta  charset="UTF-8">
+    < title >FromJSONToHTMLTable</ title >
+    < style >
+         table , th {
+             border : groove ;
+             border-collapse : collapse ;
         }
-         **td** {
-             **border** : 1 **px solid black** ;
+         td {
+             border : 1 px solid black ;
         }
-         **td** , **th** {
-             **padding** : 5 **px** ;
+         td , th {
+             padding : 5 px ;
         }
-    &lt;/ **style** &gt;
-&lt;/ **head** &gt;
-&lt; **body** &gt;
-    &lt; **div**  **id=****&quot;wrapper&quot;**&gt;
-    &lt;/ **div** &gt;
-    &lt; **script** &gt;
-         **function** _fromJSONToHTMLTable_(input){
+    </ style >
+</ head >
+< body >
+    < div  id="wrapper">
+    </ div >
+    < script >
+         function _fromJSONToHTMLTable_(input){
             _//Write your code here
         _ }
-         **window**.onload = **function** (){
-             **let** container = **document**.getElementById( **&#39;wrapper&#39;** );
-            container. **innerHTML** = _fromJSONToHTMLTable_([**&#39;[{&quot;Name&quot;:&quot;Tomatoes &amp; Chips&quot;,&quot;Price&quot;:2.35},{&quot;Name&quot;:&quot;J&amp;B Chocolate&quot;,&quot;Price&quot;:0.96}]&#39;**]);
+         window.onload = function (){
+             let container = document.getElementById( 'wrapper' );
+            container. innerHTML = _fromJSONToHTMLTable_(['[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]']);
         };
-    &lt;/ **script** &gt;
-&lt;/ **body** &gt;
-&lt;/ **html** &gt; |
+    </ script >
+</ body >
+</ html >
 ```
 
 ### Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| [{&quot;Name&quot;:&quot;Tomatoes &amp; Chips&quot;,&quot;Price&quot;:2.35},{&quot;Name&quot;:&quot;J&amp;B Chocolate&quot;,&quot;Price&quot;:0.96}] |
-| &lt;table&gt; <br/>    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Tomatoes &amp;amp; Chips&lt;/td&gt;&lt;td&gt;2.35&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;J&amp;amp;B Chocolate&lt;/td&gt;&lt;td&gt;0.96&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
-| [{&quot;Name&quot;:&quot;Pesho &lt;div&gt;-a&quot;,&quot;Age&quot;:20,&quot;City&quot;:&quot;Sofia&quot;},
-{&quot;Name&quot;:&quot;Gosho&quot;,&quot;Age&quot;:18,&quot;City&quot;:&quot;Plovdiv&quot;},{&quot;Name&quot;:&quot;Angel&quot;,&quot;Age&quot;:18,&quot;City&quot;:&quot;Veliko Tarnovo&quot;}] |
-| &lt;table&gt; <br/>    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;City&lt;/th&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Pesho &amp;lt;div&amp;gt;-a&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;Sofia&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Gosho&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;Plovdiv&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Angel&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;Veliko Tarnovo&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
+| [{&quot;Name&quot;:&quot;Tomatoes &amp; Chips&quot;,&quot;Price&quot;:2.35},{&quot;Name&quot;:&quot;J&amp;B Chocolate&quot;,&quot;Price&quot;:0.96}] || &lt;table&gt; <br/>    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Tomatoes &amp;amp; Chips&lt;/td&gt;&lt;td&gt;2.35&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;J&amp;amp;B Chocolate&lt;/td&gt;&lt;td&gt;0.96&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
+| [{&quot;Name&quot;:&quot;Pesho &lt;div&gt;-a&quot;,&quot;Age&quot;:20,&quot;City&quot;:&quot;Sofia&quot;}, {&quot;Name&quot;:&quot;Gosho&quot;,&quot;Age&quot;:18,&quot;City&quot;:&quot;Plovdiv&quot;},{&quot;Name&quot;:&quot;Angel&quot;,&quot;Age&quot;:18,&quot;City&quot;:&quot;Veliko Tarnovo&quot;}] | &lt;table&gt; <br/>    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;City&lt;/th&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Pesho &amp;lt;div&amp;gt;-a&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;Sofia&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Gosho&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;Plovdiv&lt;/td&gt;&lt;/tr&gt; <br/>    &lt;tr&gt;&lt;td&gt;Angel&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;Veliko Tarnovo&lt;/td&gt;&lt;/tr&gt; <br/> &lt;/table&gt; |
 
 ## 2.Sum by Town
 
