@@ -372,7 +372,7 @@ The **output** consists of **n** lines for **odd**  **n** and **n-1** lines for 
 | **Input** | **Output** |  
 | --- | --- |
 | 4 | +--+--+ <br/>  +--+--+ <br/> +--+--+ | 
-|5 | +---+---+ <br/> \|&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;\| <br/> +---+---+ <br/> \|&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;\| <br/> +---+---+ |   
+|5 | +---+---+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +---+---+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +---+---+ |   
 | 6 | +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ <br/> \|&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;\| <br/> +----+----+ |
 | 7 | +-----+-----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +-----+-----+ <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> \|&ensp;&ensp;&ensp;&ensp;&ensp;\|&ensp;&ensp;&ensp;&ensp;&ensp;\| <br/> +-----+-----+ |
 
@@ -406,41 +406,41 @@ To simplify your work, use the below HTML code and write the missing code in the
 
 ```HTML
 <!DOCTYPE html>
-< **html** >
-< **head** >
-    < **title** >Monthly Calendar</ **title** >
-    < **style** >
-        . **prev-month** , . **next-month** { color: **#CCC** }
-        . **today** { font-weight: **bold** ; background: **#DDD** ; }
-        . **title** { background: **#AAAAFF** ; margin: 10 **px 0** ; padding:5 **px** }
-         **table** { border: 1 **px solid**  **#CCC** ;}
-         **td** { text-align: **center** ; }
-         **#calendarCode** { width: 100%; }
-    </ **style** >
-    < **script** >
-         **function** _calendar_([day, month, year])
-        {            _//_ **TODO: return the HTML text holding the calendar table**         }
-    </ **script** >
-</ **head** >
+< html >
+< head >
+    < title >Monthly Calendar</ title >
+    < style >
+        . prev-month , . next-month { color: #CCC }
+        . today { font-weight: bold ; background: DDD ; }
+        . title { background: AAAAFF ; margin: 10 px 0 ; padding:5 px }
+         table { border: 1 px solid  #CCC ;}
+         td { text-align: center ; }
+         #calendarCode { width: 100%; }
+    </ style >
+    < script >
+         function _calendar_([day, month, year])
+        {            _//_ TODO: return the HTML text holding the calendar table         }
+    </ script >
+</ head >
 
-< **body** >
-    Day: < **input** id= **"day"** type= **"number"** value= **"4"** />
-    Month: < **input** id= **"month"** type= **"number"** value= **"9"** />
-    Year: < **input** id= **"year"** type= **"number"** value= **"2016"** />
-    < **input** type= **"button"** value=**"Show"
-         **onclick=**" ****let**  **calendarHTML** =
-            _calendar_([ **document**.getElementById( **'day'** ). **value** ,
-                 **document**.getElementById( **'month'** ). **value** ,
-                 **document**.getElementById( **'year'** ). **value** ]);
-             **document**.getElementById( **'calendar'** ). **innerHTML** = **calendarHTML** ;
-             **document**.getElementById( **'calendarCode'** ). **innerText** = **calendarHTML****"** />
-    < **div** class= **"title"** >Calendar:</ **div** >
-    < **div** id= **"calendar"** >Calendar will be shown here</ **div** >
-    < **div** class= **"title"** >HTML:</ **div** >
-    < **textarea** rows= **"12"** id= **"calendarCode"** ></ **textarea** >
-</ **body** >
+< body >
+    Day: < input id= "day" type= "number" value= "4" />
+    Month: < input id= "month" type= "number" value= "9" />
+    Year: < input id= "year" type= "number" value= "2016" />
+    < input type= "button" value="Show"
+         onclick=" let calendarHTML =
+            _calendar_([ document.getElementById( 'day' ). value ,
+                 document.getElementById( 'month' ). value ,
+                 document.getElementById( 'year' ). value ]);
+             document.getElementById( 'calendar' ). innerHTML = calendarHTML ;
+             document.getElementById( 'calendarCode' ). innerText = calendarHTML" />
+    < div class= "title" >Calendar:</ div >
+    < div id= "calendar" >Calendar will be shown here</ div >
+    < div class= "title" >HTML:</ div >
+    < textarea rows= "12" id= "calendarCode" ></ textarea >
+</ body >
 
-</ **html** >
+</ html >
 ```
 
 ### Hints
